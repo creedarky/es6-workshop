@@ -1,68 +1,62 @@
-# ES6-Workshop
+# ES2015-Workshop
 
-## Welcome
+## Bienvenido
 
-Welcome to this ES6 workshop. Our goal is to help everyone make strides towards learning the newest ES6 syntax, and
-how to use the latest constructs in JavaScript.
+Bienvenido a este workshop de ES2015. La meta es ayudar a todos a dar sus primeros pasos en lo mas nuevo de la sintaxis y funcionalidades de ECMAScript
+y como usarlo.
 
-This repo is meant to be used in parallel with a lecture style presentation of
-[the new features](https://github.com/lukehoban/es6features).
+Este repositorio fue hecho para ser usando en paralelo con la lectura de
+[las nuevas mejoras](https://github.com/lukehoban/es6features).
 
-## Your Goal
+## Tu meta
 
-This repo is full of failing tests. The only way to get them to pass it by using your newly acquired knowledge of ES6
-and all of the new features that are part of this latest release. For each test, you will need to write/rewrite to code
-using the latest ES6 syntax. Once all of your tests pass, you will want to move onto the next section.
+Este repositorio está lleno de test fallando. La unica manera de pasarlos es usando tu conocimiento recientemente adquirido de ES2015 y
+todas las nuevas mejoras que son parte del ultimo release. Para cada test, tendras que escribir o reescribir el codigo usando
+el ultimo sintaxis de ES2015. Una vez que hagas pasar todos los tests de un archivo, pasaras a la siguiente sección del codigo.
 
+Cuando termine este workshop, todos tus tests estaran corriendo y pasando
 By the time that the workshop is over, all of your tests will be running and passing.
 
-## How To Get Started
+## Cómo empezar
 
-### Clone the repo
+### Clonar el repositorio
 
-You will need to start by cloning this repo. From your terminal, type:
+Tendras que partir clonando este repositorio desde tu terminal:
 
 ```
-git clone https://github.com/kentcdodds/es6-workshop.git && cd es6-workshop
+git clone https://github.com/creedarky/es6-workshop.git && cd es6-workshop
 ```
 
-### Install Dependencies
+### Instalar dependencias
 
-Once you have cloned the repo, in need to install the local dependencies. From your terminal, type:
+Una vez que has clonado el repositorio, debes instalar las dependencias locales desde tu terminal:
 
 ```
 npm install
 ```
 
-# How To Run Tests
-Once you have everything installed, you are ready to run some tests. There are two directories with tests in them: `test` and `test-final`.
-The `test-final` directory is like a cheat sheet. All of the tests contain the required ES6 code to make the tests pass. You will need to
-edit the tests in the `test` directory, and make the tests pass.
+# Como correr los tests
+Una vez que tengas todo instalando, estás listo para correr los tests. Hay dos directorios con tests en ellos: `test` and `test-final`.
+El directorio `test-final` es un apoyo si no logras resolver alguno de los test, todos estos tests incluyen el codigo de ES2015 necesario para pasar los tests.
+Tendrás que editar los tests en el directorio `test` y hacer que lo tests pasen.
 
-To run the tests, in your terminal run:
+Para correr los tests en tu terminal escribe:
 
 ```
 npm test
 ```
 
-If you want the tests to continue running as you make changes, run:
+ Si quieres que los tests continuen corriendo mientras haces cambios, escribe:
 
 ```
-npm run test:watch
+npm start
 ```
 
-This will execute the tests in the `test` directory. Currently all of these tests are disabled, using `it.skip`. Your
-job is to one-by-one turn each test back on and get the test to pass, by writing the required ES6 code. Once you have
-written the required code, the tests will pass, and you can move onto the next test.
+Esto ejecutara los tests en el directorio `test`. Actualmente estos tests estan deshabilitados, usando `it.skip`.
+Tu trabajo es activar uno por uno y hacer que el test pase, escribiendo el codigo de ES2015 requerido.
+Cuando hayas escrito el codigo, el test pasara y podrás pasar al siguiente test.
 
 # Thanks
 
-If you have any questions, [let me know](https://twitter.com/kentcdodds).
+Si tienes alguna pregunta, [let me know](https://twitter.com/creedarky).
 
-If you use this workshop, please Pull Request this readme with a link to your event.
-
-### Events
-
-- [FluentConf 2015 - Axel Rauschmayer & Aaron Frost](http://fluentconf.com/javascript-html-2015/public/schedule/detail/38811)
-- [SLC JS Learners Meetup - Kent C. Dodds](http://www.meetup.com/SLC-JS-Learners/events/220770922/)
-- [MidwestJS 2015 - Kent C. Dodds](https://youtu.be/aeY6ctvsurs)

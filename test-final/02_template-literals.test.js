@@ -3,21 +3,20 @@ import {expect} from 'chai';
 describe('Template Literals', () => {
   it('should support string interpolation', () => {
     // construct a string using template literal string interpolation
-    const person = {
-      name: 'Kent C. Dodds',
-      friends: [
-        'Brooke Dodds',
-        'Matt Zabriskie',
-        'Aaron Frost',
-        'Dave Geddes',
-        'Joe Eames',
-        'Ryan Florence'
+    const company = {
+      name: 'Axiom Zen',
+      products: [
+        'ZenHub',
+        'Routific',
+        'Timeline',
+        'Pipp',
+        'Persomm'
       ]
     };
 
-    const personsFriends = `${person.name} has ${person.friends.length} friends: ${person.friends.join(', ')}`;
-    expect(personsFriends).to.equal(
-      'Kent C. Dodds has 6 friends: Brooke Dodds, Matt Zabriskie, Aaron Frost, Dave Geddes, Joe Eames, Ryan Florence'
+    const companyProducts = `${company.name} has ${company.products.length} incredible products: ${company.products.join(', ')}`;
+    expect(companyProducts).to.equal(
+      'Axiom Zen has 5 incredible products: ZenHub, Routific, Timeline, Pipp, Persomm'
     );
   });
 
