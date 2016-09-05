@@ -1,7 +1,7 @@
 import {expect} from 'chai';
 
 describe('Template Literals', () => {
-  it.skip('should support string interpolation', () => {
+  it('should support string interpolation', () => {
     // construct a string from the person object using template literal string interpolation
     const company = {
       name: 'Axiom Zen',
@@ -14,22 +14,25 @@ describe('Template Literals', () => {
       ]
     };
 
-    const companyProducts = ``;
+    const companyProducts = `Axiom Zen has ${company.products.length} incredible products: ${company.products.join(', ')}`;
     expect(companyProducts).to.equal(
       'Axiom Zen has 5 incredible products: ZenHub, Routific, Timeline, Pipp, Persomm'
     );
   });
 
-  it.skip(`should support multi-line strings`, () => {
+  it(`should support multi-line strings`, () => {
     // construct a string with multiple lines without needing escaped newline characters
-    const multiLine = ``;
+    const multiLine = `
+      How cool
+      is this!?
+    `;
     expect(multiLine).to.equal('\n      How cool\n      is this!?\n    ');
   });
 
-  it.skip(`should support string escaping`, () => {
+  it(`should support string escaping`, () => {
     // properly escape a string in a template literal for each of these
-    expect(``).to.equal('Hi\nthere!');
-    expect(``).to.equal('This is `escaped` backtics');
+    expect(`Hi\nthere!`).to.equal('Hi\nthere!');
+    expect(`This is \`escaped\` backtics`).to.equal('This is `escaped` backtics');
   });
 
   describe(`EXTRA CREDIT`, () => {

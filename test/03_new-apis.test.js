@@ -1,24 +1,27 @@
 import {expect} from 'chai';
 
 describe(`String`, () => {
-  it.skip(`should be easier to determine whether a string includes another`, () => {
+  it(`should be easier to determine whether a string includes another`, () => {
     const sentence = 'It was the best of times. It was the worst of times';
+    let result = sentence.includes('best of times');
     // create a variable called `result` that is assigned to a call of sentence.includes
     expect(result).to.be.true;
   });
 
-  it.skip(`should be easier to repeat a string`, () => {
+  it(`should be easier to repeat a string`, () => {
     const repeated = 'abc123';
+    const result = repeated.repeat(4);
     // create a variable called `result` that is the result of repeating the string 4 times
     expect(result).to.equal('abc123abc123abc123abc123');
   });
 });
 
 describe(`Array`, () => {
-  it.skip(`should be able to take an array-like object and convert it into an array`, () => {
+  it(`should be able to take an array-like object and convert it into an array`, () => {
     var obj = {length: 3, 0: 'a', 1: 'b', 2: 'c'};
     // this is even more handy with a NodeList like that returned from document.querySelector
     // create a variable called `result` and assign it to a call to Array.from
+    let result = Array.from(obj);
     expect(result).to.deep.equal(['a', 'b', 'c']);
   });
 
@@ -30,7 +33,7 @@ describe(`Array`, () => {
 });
 
 describe(`Object`, () => {
-  it.skip(`should be easy to copy properties from one object to another`, () => {
+  it(`should be easy to copy properties from one object to another`, () => {
     const source1 = {
       a: {
         b: 'c',
@@ -59,7 +62,7 @@ describe(`Object`, () => {
     };
 
     // merge the sources into the target using Object.assign and assign the result to `result`
-
+    let result = Object.assign(target, source1, source2, source3 );
     expect(result).to.deep.equal({
       a: {
         b: 'c',
